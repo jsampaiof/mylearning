@@ -1,6 +1,81 @@
 body{
     background-color: bisque;
+    background-image: url("images/Screenshot\ from\ 2021-08-13\ 12-54-44.png");
 }
-.list{
+table{
     color: brown;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-spacing: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+thead{
+    color: darkred;
+    font-weight: bold;
+    text-align: center;
+    background-color: aliceblue;
+}
+caption{
+    font-weight: bold;
+    font-style: italic;
+}
+tfoot{
+    text-align: center;
+    font-style: italic;
+}
+tbody tr:nth-child(even){
+    background-color: azure;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(59, 241, 241);
+}
+tbody tr:hover{
+    
+    background-color: lightcoral;
+}
+button{
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: violet;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;    
+}
+a:visited{
+    color: aqua;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+p::first-letter{
+    font-size: 30px;
+}
+div p::first-line{
+    font-weight: bold;
+}
+::marker{
+    color: cadetblue;
+}
+::selection{
+    background-color: #9d73ff;
+    color: white;
+}
+.glass-effect {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .text-background-black{
+    color: aliceblue;
+    text-shadow: 2px;
+  }
+  div.glass-effect{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

@@ -1,0 +1,20 @@
+{
+  "name": "mysite-package",
+  "version": "1.0.0",
+  "description": "testando esse negócio, kkkkkkk.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "testando",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsampaiof/mysite.git"
+  },
+  "author": "Jo Sampaio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsampaiof/mysite/issues"
+  },
+  "homepage": "https://github.com/jsampaiof/mysite#readme"
+}

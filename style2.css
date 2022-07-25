@@ -2,11 +2,13 @@ body{
     background-color: lightskyblue;
 }
 nav{
+    position: relative;
+    /*border: 3px solid;*/
+    margin: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 li{
     display: inline-block;
-    padding: 5px;
     border: 2px solid;
     color: cornflowerblue;
     border-radius: 25px;
@@ -21,4 +23,29 @@ a{
 }
 a:visited{
     color: violet;
+}
+ul{
+    /*position: absolute;
+    left: 25%;
+    /*top: 5%;
+    width: 50%;*/
+    display: flex; justify-content: center;
+    padding-left: 0px;
+}
+div.a{
+    /*margin-top: 10px;*/
+    display: flex; justify-content: center; 
+    border: 3px solid;
+    width: 300px;
+    height: 500px;
+    padding: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+div.scroll{
+    border: 2px solid;
+    width: 500px;
+    height: 100px;
+    overflow: scroll;
+    margin-top: 20px;
 }

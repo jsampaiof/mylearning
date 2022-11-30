@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom - aula 2</title>
+    <script src="index.js" defer></script>
+    <style>
+        li.naorealizada{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        li.realizada{
+            text-decoration: line-through;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="text" name="tarefas" id="tarefas" placeholder="tarefas">
+        <button type="submit" id="adicionar">adicionar</button>
+    </form>
+    <select name="" id="listasuspensa" hidden>
+        <option value="">selecione uma opção</option>
+        <option value="">marcar todas</option>
+        <option value="">desmarcar todas</option>
+        <option value="">limpar lista</option>
+    </select>
+    <ul id="lista-de-tarefas">
+
+    </ul>
+</body>
+</html>

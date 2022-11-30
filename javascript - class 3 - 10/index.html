@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <h1 id="a1">hello, my friend</h1>
+    <form action="" id="formulario" onsubmit="login(); return false;">
+        <label for="01">nome</label>
+        <input id="user" type="text" name="nome" id="01" placeholder="nome completo" required>
+        <label for="02">senha</label>
+        <input type="password" name="senha" id="02" placeholder="senha">
+        <input type="submit" value="enviar">
+    </form>
+    <select name="cores" id="colors" onchange="changecolor()">
+        <option value="blue">azul</option>
+        <option value="green">verde</option>
+        <option value="pink">rosa</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>

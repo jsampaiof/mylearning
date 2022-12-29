@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="scripts/index.js" defer></script>
+    <title>Simulator</title>
+</head>
+<body>
+    <h1>Finance Simulator</h1>
+    <div>
+        <input type="text" id="textoValor" placeholder="valor do bem"><br>
+        <input type="text" id="textoEntrada" placeholder="valor da entrada"><br>
+        <input type="text" id="textoTaxa" placeholder="Taxa de juros (%)"><br>
+        <input type="text" id="textoPrazo" placeholder="prazo (em meses)"><br>
+        <button type="button">Calcular</button>
+        <input type="checkbox" id="carencia"> com carência?
+        <select name="" id="listasuspensa" hidden>
+            <option value="2">2 meses</option>
+            <option value="3">3 meses</option>
+            <option value="4">4 meses</option>
+        </select>
+    </div>
+</body>
+</html>

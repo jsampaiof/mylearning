@@ -143,3 +143,9 @@ camaro.setAno(2039);
 console.log(camaro);
 const text = `${camaro.marca} ${camaro.getName()}`;
 console.log(text);
+let person = new persondata('carlos', 20, '12/05/2000');
+let person1 = new persondata('andressa', 17, '12/05/2006');
+let car = new cars()
+
+console.log(person.name);
+console.log(person1.age);

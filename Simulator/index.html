@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="scripts/index.js" defer></script>
     <title>Simulator</title>
+    <style>
+        table, tr, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Finance Simulator</h1>
@@ -14,7 +21,7 @@
         <input type="text" id="textoEntrada" placeholder="valor da entrada"><br>
         <input type="text" id="textoTaxa" placeholder="Taxa de juros (%)"><br>
         <input type="text" id="textoPrazo" placeholder="prazo (em meses)"><br>
-        <button type="button">Calcular</button>
+        <button id="botaoCalcular" type="button">Calcular</button>
         <input type="checkbox" id="carencia"> com carência?
         <select name="" id="listasuspensa" hidden>
             <option value="2">2 meses</option>
@@ -22,5 +29,19 @@
             <option value="4">4 meses</option>
         </select>
     </div>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Valor da parcela</th>
+                <th>Amortização</th>
+                <th>juros</th>
+                <th>saldo devedor</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+        </tbody>
+    </table>
 </body>
 </html>

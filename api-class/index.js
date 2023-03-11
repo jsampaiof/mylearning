@@ -9,7 +9,6 @@ import {StatusCodes} from 'http-status-codes';
 
 const app = Express();
 const port = process.env.port || 80;
-
 let users = [
     {id: 1, name: 'gabriel', age: 21},
     {id: 2, name: 'suzan', age: 23},
@@ -18,6 +17,9 @@ let users = [
 app.use(Express.json());
 
 //o primeiro paramentro é a porta e o segundo é uma função de callback. quando começar escutar essa porta especifica, ele vai executar essa função.
+
+app.listen(PORT, () => {
+    console.log(`servidor rodando na porta http://localhost:${PORT}`)
 
 app.listen(PORT, () => {
     console.log(`servidor rodando na porta http://localhost:${PORT}`)

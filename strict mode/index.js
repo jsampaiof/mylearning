@@ -143,3 +143,6 @@ camaro.setAno(2039);
 console.log(camaro);
 const text = `${camaro.marca} ${camaro.getName()}`;
 console.log(text);
+
+console.log(person.name);
+console.log(person1.age);

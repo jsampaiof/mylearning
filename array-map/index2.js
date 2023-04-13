@@ -19,6 +19,12 @@ async function main(){
         total += Number(person.height);
         return total;
     }, 0);
+
+    const  starPeopleName = starPeople.map((person) => { 
+        const {name, height, gender, color, planet} = person;
+        return {name, height, gender, color, planet};
+    });
+
     console.log(starPeopleName);
 }
 main();

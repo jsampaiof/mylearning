@@ -57,3 +57,8 @@ app.delete('/users/:userid', (request, response) => {
     users = users.filter((user) => user.id !== Number(userid));
     return response.status(StatusCodes.NO_CONTENT).send();
 });
+app.delete('/users/:userid', (request, response) => {
+    const userid = request.params.userid;
+    users = users.filter((user) => user.id !== Number(userid));
+    return response.status(StatusCodes.NO_CONTENT).send();
+});

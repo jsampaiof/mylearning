@@ -1,6 +1,6 @@
 import { parcelas } from "./parcelas.js";
 
-class financiamento{
+export class financiamento{
     #taxajuros;
     #prazo;
     #parcelas = [];
@@ -15,7 +15,7 @@ class financiamento{
     }
     
     calcParcelasMensais(){
-        let saldo = this.#parcelas[this.#parcelas.length-1].getsaldo();
+        let saldo = this.#parcelas[this.#parcelas.length-1].getSaldo();
         let prazo = this.#prazo - (this.#parcelas.length-1);
         let amortização = saldo/prazo;
         for (let i = 0; i < prazo; i++) {
@@ -37,5 +37,9 @@ class financiamento{
                 celula.textContent = dado;
             }
         }
+    }
+
+    getParcelas(){
+        return this.#parcelas;
     }
 }

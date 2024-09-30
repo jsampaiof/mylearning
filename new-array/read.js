@@ -49,9 +49,14 @@ const writeFilePromise = promisify(fs.writeFile);
 
 readFilePromise('./CRONOGRAMA.json', 'utf8').then((data) => {
     console.log(data);
-    const newData = JSON.stringify({'25':'concluido'});
+    const newData = JSON.stringify({'152':'concluido'});
     writeFilePromise('./cronograma.json', newData, 'utf8').then((data) => {
-        console.log(data);        
+        //console.log(data); WRITEFILE DON'T RETURN DATA
+        readFilePromise('./CRONOGRAMA.json', 'utf8').then((data) => {
+            console.log(data);
+        }).catch((erro) => {
+            console.error(erro);            
+        });        
     }).catch((erro) => {
         console.error(erro);        
     });

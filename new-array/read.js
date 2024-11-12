@@ -62,7 +62,12 @@ readFilePromise('./CRONOGRAMA.json', 'utf8').then((data) => {
     });
 }).catch((erro) => {
     console.error(erro);    
-})
+});
 
 //readFile();
 //readFile(writeFile);
+
+async function readFile(){
+    const newData = JSON.stringify({'152':'concluido'});
+    readFilePromise('./CRONOGRAMA.json', 'utf-8').then
+}
